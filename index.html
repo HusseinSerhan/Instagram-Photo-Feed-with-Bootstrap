@@ -19,15 +19,88 @@
   </head>
   <body>
 
+<!-- NavBar Toggler Collapse Test -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container">
+    <i class="fa-brands fa-instagram fa-2x" href="#"> Instagram</i>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+      </ul>
+     
+      <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
+            <ul class="dropdown-menu dropdown-menu-end drop-down-lg-start">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#" style="color: red;">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+      <!-- Dropdown code linked via ID -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Caption:</label>
+                <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+              </div>
+            </form>
+            <button type="button" class="btn btn-light border"><i class="fa-solid fa-camera"></i></button>
+            <button type="button" class="btn btn-light border"><i class="fa-solid fa-location-dot"></i></button>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+</nav>
+
+
+
+
+
+
+<!-- NavBar Toggler End Test -->
+
+
+
+
+
   <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <i class="fa-brands fa-instagram fa-2x" href="#"> Instagram</i>
+          <i class="fa-brands fa-instagram fa-2x" href="#"> Instagram</i> -->
 
     <!-- Buttons on the right -->
-          <div class="navbar-nav">
+          <!-- <div class="navbar-nav"> -->
     <!-- Modal -->
-    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+    <!-- <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
     
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -55,11 +128,11 @@
       </div>
     </div>
     
-    
+     -->
     
     <!-- End modal -->
     <!--Dropdown  -->
-    <div class="dropdown">
+    <!-- <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
           <ul class="dropdown-menu dropdown-menu-end drop-down-lg-start">
               <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -70,9 +143,11 @@
             </ul>
           </div>
         </div>
-      </div>
-    </nav>
-  <!-- End Navbar -->
+      </div> -->
+
+      <!-- End Dropdown -->
+    <!-- </nav> -->
+  <!-- End NavBar -->
 
 <!-- Tabs -->
 <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
