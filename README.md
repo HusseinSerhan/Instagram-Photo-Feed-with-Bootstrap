@@ -6,6 +6,9 @@ Welcome to my Instagram clone project! This is a simple clone of Instagram's pho
 
 You can view the webpage at https://husseinserhan.github.io/Instagram-Photo-Feed-with-Bootstrap/
 
+![Alt Text](test2.gif)
+
+
 ## Bootstrap 5 Components Used
 
 This project uses the following components from Bootstrap 5:
