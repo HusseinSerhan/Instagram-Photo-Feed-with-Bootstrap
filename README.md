@@ -12,7 +12,7 @@ This project uses the following components from Bootstrap 5:
 
 - The grid with three images by row: This is used to display multiple photos in a row on the photo feed page.
 - The grid with one image by row: This is used to display individual photos on the photo feed page.
-- The modal: This is used to display a larger version of a photo when clicked on.
+- The modal: This is used to display a form by clicking on "create a new post" button.
 - The dropdown: This is used in the header to display a dropdown menu with options.
 
 ## Credits
