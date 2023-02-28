@@ -1,0 +1,114 @@
+#ig {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+  }
+
+  .dropdown-toggle::before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: none;
+    margin-right: 0.1rem;
+  }
+
+#dropdownMenuButton {
+    width: 50px;
+}
+
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.5em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    color: white;
+  }
+  
+#col-sm-4 {
+    width: 100%;
+    height: 200px; /* or whatever height you want */
+    object-fit: cover;
+  }
+
+/* Three pictures per row */
+.three-per-row-btn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  /* One picture per row */
+  .one-per-row-btn {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+
+  /* Content 1-col */
+
+
+  
+.section-1-col {
+    font-family: 'Lato', sans-serif;
+    min-width: 400px;
+    width: 40%;
+    height: 40%;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 3%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    align-content: center;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.elements {
+    display: flex;
+}
+
+.left-element {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    margin-left: 6px;
+    text-align: left !important;
+    font-weight: bold;
+  }
+
+.right-element {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 16px;
+    text-align: right !important;
+    font-weight: lighter;
+    margin-top: 0px;
+  }
+
+p {
+    text-align: left;
+    margin-bottom: -5px;
+}
+
+.section-1-col > .right-element, .left-element, p {
+    border: 1px none black;
+    padding: 1
+    0px;
+} 
+
+.image-1-col {
+    padding: 0px;
+    width: 100%;
+    margin: auto;
+    display:block;
+}
+  /* End content 1-col */
