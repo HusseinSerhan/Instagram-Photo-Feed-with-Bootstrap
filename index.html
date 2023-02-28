@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha512-3yTlAmwTtiv2hCYHqye3Z2eyruM84S2Z/mJdLc55z4P7V4w4p8JBJxhEjlzJYBmAjhLp6mkOj6e5U2G19JF1Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css”/>
+    <script src="https://kit.fontawesome.com/38eb747747.js" crossorigin="anonymous"></script>
+    <!-- End Fonts -->
+    <title>Instagram Feed with Bootstrap</title>
+  </head>
+  <body>
+
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <i class="fa-brands fa-instagram fa-2x" href="#"> Instagram</i>
+
+    <!-- Buttons on the right -->
+          <div class="navbar-nav">
+    <!-- Modal -->
+    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Caption:</label>
+                <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+              </div>
+            </form>
+            <button type="button" class="btn btn-light border"><i class="fa-solid fa-camera"></i></button>
+            <button type="button" class="btn btn-light border"><i class="fa-solid fa-location-dot"></i></button>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <!-- End modal -->
+    <!--Dropdown  -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
+          <ul class="dropdown-menu dropdown-menu-end drop-down-lg-start">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#" style="color: red;">Log Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  <!-- End Navbar -->
+
+<!-- Tabs -->
+<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells me-2"></i></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-align-justify me-2"></i></button>
+  </li>
+</ul>
+<!-- Tab Content -->
+<div class="tab-content" id="myTabContent">
+
+ 
+<!-- Content 3 columns -->
+  <div class="tab-pane fade show active px-4 mx-2" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="row mt-3">
+      <img src="Resources/Mr Beast.png" class="img-fluid col-md-4 mb-3"> 
+      <img src="Resources/Khabib.png" class="img-fluid col-md-4 mb-3">
+      <img src="Resources/Derek.png" class="img-fluid col-md-4 mb-3">
+    </div>
+    <div class="row">
+      <img src="Resources/Joe.png" class="img-fluid col-md-4 mb-3">
+      <img src="Resources/Khamzat.png" class="img-fluid col-md-4 mb-3">
+      <img src="Resources/O Stone.png" class="img-fluid col-md-4 mb-3">
+    </div>
+    <div class="row">
+      <img src="Resources/Rick Rubin.png" class="img-fluid col-md-4 mb-3">
+      <img src="Resources/Tyson.png" class="img-fluid col-md-4 mb-3">
+      <img src="Resources/William Harris.png" class="img-fluid col-md-4 mb-3">
+    </div>
+  </div>
+<!-- End columns content -->
+
+
+<!-- Tab 1 column -->
+<div class="tab-pane fade px-2 mx-2" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  
+
+  <div class="row section-1-col">
+    <div class="elements">
+        <div class="left-element">Rick Rubin</div>
+        <div class="right-element">Jan 23</div>
+    </div>  
+      <img src="Resources/Rick Rubin.png" alt="Rick Rubin" class="image-1-col col-md-1 mb-1">
+      <p><strong>12,202 Likes</strong></p>
+      <p>Rick Rubin, helped create amazing albums that marked so many moments where I remember hearing them for the first time.</p>
+  </div>
+
+  <div class="row section-1-col">
+    <div class="elements">
+        <div class="left-element">Derek</div>
+        <div class="right-element">Jan 25</div>
+    </div>  
+      <img src="Resources/Derek.png" alt="Derek" class="image-1-col">
+      <p><strong>5,001 likes</strong></p>
+      <p>Derek, More Plates, More Dates fitness instructor, YouTube(r).</p>
+  </div>
+
+  <div class="row section-1-col">
+    <div class="elements">
+        <div class="left-element">Mr. Beast</div>
+        <div class="right-element">Jan 26</div>
+    </div>  
+      <img src="Resources/Mr Beast.png" alt="MrBeast" class="image-1-col">
+      <p><strong>2,754 likes</strong></p>
+      <p>Mr. Beast. Didn’t know him before, crazy energy, made me feel like I need to step up my game....just a little</p>
+  </div>
+
+  <div class="row section-1-col">
+    <div class="elements">
+        <div class="left-element">Khabib</div>
+        <div class="right-element">Jan 27</div>
+    </div>  
+      <img src="Resources/Khabib.png" alt="Khabib" class="image-1-col">
+      <p><strong>2,457 likes</strong></p>
+      <p>Khabib Nurmagomedov; 28-0!</p>
+  </div>
+
+  <div class="row section-1-col">
+    <div class="elements">
+        <div class="left-element">Joe Rogan</div>
+        <div class="right-element">Jan 28</div>
+    </div>  
+      <img src="Resources/Joe.png" alt="Joe" class="image-1-col">
+      <p><strong>4,557 likes</strong></p>
+      <p>Thank you @joerogan for the incredible podcasts (I plan on still listening/watching).</p>
+  </div>
+
+  <div class="row section-1-col">
+    <div class="elements">
+        <div class="left-element">Khamzat</div>
+        <div class="right-element">Jan 27</div>
+    </div>  
+      <img src="Resources/Khamzat.png" alt="Khamzat" class="image-1-col">
+      <p><strong>2,557 likes</strong></p>
+      <p>UFC 267, congratulations to Khamzat, Glover and all.</p>
+  </div>
+
+  <div class="row section-1-col">
+    <div class="elements">
+        <div class="left-element">Oliver Stone</div>
+        <div class="right-element">Jan 26</div>
+    </div>  
+      <img src="Resources/O Stone.png" alt="O Stone" class="image-1-col">
+      <p><strong>1,557 likes</strong></p>
+      <p>Oliver Stone; fascinating. As usual.</p>
+  </div>
+
+  <div class="row section-1-col">
+    <div class="elements">
+        <div class="left-element">Mike Tyson</div>
+        <div class="right-element">Jan 27</div>
+    </div>  
+      <img src="Resources/Tyson.png" alt="Tyson" class="image-1-col">
+      <p><strong>9,457 likes</strong></p>
+      <p>Mike Tyson; former heavyweight boxing champion. Still as scary as he ever was and he always surprises me with how much he knows...telling young Jaime to look stuff up.</p>
+  </div>
+
+  <div class="row section-1-col">
+    <div class="elements">
+        <div class="left-element">William Harris</div>
+        <div class="right-element">Jan 27</div>
+    </div>  
+      <img src="Resources/William Harris.png" alt="Harris" class="image-1-col">
+      <p><strong>8,457 likes</strong></p>
+      <p>Generation cattleman informal. He is the owner of white pastures, humaine and regenerative farming.</p>
+  </div>
+ 
+
+ 
+
+
+
+</div>
+
+
+
+
+
+<!-- </div> -->
+ 
+
+
+<!-- Tab Content -->
+<!-- <div class="tab-content" id="myTabContent"> -->
+<!-- 3 Columns content -->
+  <!-- <div class="tab-pane fade show active" id="1-col" role="tabpanel" aria-labelledby="home-tab">.11000..
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <img src="Resources/Derek.png" class="img-fluid">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="Resources/Joe.png" class="img-fluid">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="Resources/Khabib.png" class="img-fluid">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <img src="Resources/Khamzat.png" class="img-fluid">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="Resources/Mr Beast.png" class="img-fluid">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="Resources/O Stone.png" class="img-fluid">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <img src="Resources/Rick Rubin.png" class="img-fluid">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="Resources/Tyson.png" class="img-fluid">
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="Resources/William Harris.png" class="img-fluid">
+      </div>
+    </div>
+
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">.222..</div>
+  </div> -->
+
+
+<!-- End Tab Content  -->
+
+<!-- Gallery -->
+        <!-- <div id="gallery">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <img src="Resources/Derek.png" class="img-fluid">
+            </div>
+            <div class="col-md-4 mb-3">
+              <img src="Resources/Joe.png" class="img-fluid">
+            </div>
+            <div class="col-md-4 mb-3">
+              <img src="Resources/Khabib.png" class="img-fluid">
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <img src="Resources/Khamzat.png" class="img-fluid">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="Resources/Mr Beast.png" class="img-fluid">
+          </div>
+          <div class="col-md-4 mb-3">
+            <img src="Resources/O Stone.png" class="img-fluid">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+              <img src="Resources/Rick Rubin.png" class="img-fluid">
+            </div>
+            <div class="col-md-4 mb-3">
+              <img src="Resources/Tyson.png" class="img-fluid">
+            </div>
+            <div class="col-md-4 mb-3">
+              <img src="Resources/William Harris.png" class="img-fluid">
+            </div>
+          </div>
+      </div>
+    </div>
+End Gallery view -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
