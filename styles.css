@@ -5,7 +5,6 @@
   }
 
   .dropdown-toggle::before {
-    content: '';
     display: inline-block;
     width: 0.5rem;
     height: 0.5rem;
@@ -14,13 +13,13 @@
   }
 
 #dropdownMenuButton {
-    width: 50px;
+    width: 40px;
 }
 
   .dropdown-toggle::after {
     display: inline-block;
     margin-left: 0.255em;
-    vertical-align: 0.255em;
+    vertical-align: 0.10em;
     content: "";
     border-top: 0.5em solid;
     border-right: 0.3em solid transparent;
@@ -112,3 +111,13 @@ p {
     display:block;
 }
   /* End content 1-col */
+
+
+
+  /* Dropdown Menu */
+.dropdown-menu-end[data-bs-popper] {
+    right: auto;
+    left: auto;
+}
+
+  /* End Dropdown Menu */
